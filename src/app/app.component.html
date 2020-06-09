@@ -7,8 +7,10 @@
 
   <form class="example-form">
     <mat-form-field class="example-full-width">
-      <mat-label>Email</mat-label>
-      <input matInput placeholder="Ex. pat@example.com">
+      <mat-label>Adresse email</mat-label>
+      <input matInput #email placeholder="john.doe@gmail.com">
+      <mat-hint align="start"><strong>Cet email pourra être modifié</strong> </mat-hint>
+      <mat-hint align="end">{{email.value.length}} / 24</mat-hint>
     </mat-form-field>
   </form>
 </div>
