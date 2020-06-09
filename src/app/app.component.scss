@@ -1,3 +1,9 @@
-mat-slider {
+.container {
+  margin: 24px;
+}
+
+mat-slider,
+mat-progress-bar {
   width: 300px;
+  margin: 10px 0;
 }
